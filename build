@@ -2,8 +2,8 @@
 set -ex
 
 function build(){
-    version=`cat data.yaml | yq .version -r`
-    download_link="`cat data.yaml | yq .link -r`"
+    version=`cat data.yaml | yq version -r`
+    download_link="`cat data.yaml | yq link -r`"
     echo "Version: $version"
 
     #### Place the binary files in the proper locations
