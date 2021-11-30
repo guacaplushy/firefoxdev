@@ -1,4 +1,4 @@
-name: ffmpeg_win64_with_fdk_aac
+name: Build
 
 on:
   push:
