@@ -2,8 +2,8 @@
 set -ex
 
 function build(){
-    version=`cat data.yaml | yq e 'version' -`
-    download_link="`cat data.yaml | yq e 'link' -`"
+    version="$(cat .version)"
+    download_link="https://download-installer.cdn.mozilla.net/pub/devedition/releases/$version/linux-x86_64/en-US/firefox-$version.tar.bz2"
     echo "Version: $version"
 
     #### Place the binary files in the proper locations
