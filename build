@@ -78,6 +78,7 @@ clean)
     ;;
 
 install)
+    cp firefoxdev_amd64.deb ~/firefoxdev_amd64.deb
     dpkg -i firefoxdev_amd64.deb
     ;;
 *)
