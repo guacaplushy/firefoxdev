@@ -33,7 +33,7 @@ function build(){
     done
 
     #### Build the package itself
-    dpkg-deb --build out "firefoxdev_${version}_amd64.deb"
+    dpkg-deb --build out "firefoxdev_amd64.deb"
 }
 
 function cron() {
